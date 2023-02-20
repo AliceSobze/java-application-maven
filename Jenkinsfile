@@ -9,6 +9,11 @@ pipeline {
        sh 'mvn clean' 
       }
     }
+    stage ("maven package") {
+      steps {
+       sh 'mvn package' 
+      }
+    }
     
     
   }
